@@ -1,3 +1,6 @@
+### react-todoList
+![Maintained](https://img.shields.io/badge/todoList-yellowgreen) ![Maintained](https://img.shields.io/badge/UNC-bootCamp-blue)
+Basic Todos application build using react.js allow user to add todos to the list and delete from the list. Also user can mark complete the todos. This application is using get axios call to jsonPlaceholder api to to get fake todos from their api. Also when you add your todos it send data to jsonPlaceholder api and send us back the respone. Won't save any data to their api. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -47,22 +50,16 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+## Contributing
+**Asad**
+Issues, Feature requests are most welcomed!. There are still issues and anyone can help to fixed the issues. Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Show your support :pray:
+Give a :star: or follow me if this project helped you.
 
-### Making a Progressive Web App
+## License 
+MIT: ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+### Any suggestion or question are most welcome
+<img src="https://avatars1.githubusercontent.com/u/7818024?v=4"  style="border-radius: 18px" width="30px" style = "border: 2px solid green" /> Email : [umiasad2017@gmail.com](asadrauf)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
