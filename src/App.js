@@ -2,29 +2,18 @@ import React, {Component} from 'react';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
-
 import './App.css';
+import axios from 'axios';
 
 
 class App extends Component {
     state = {
-      todos: [
-        {
-          id: 1,
-          title: 'Do something',
-          completed: false
-        },
-        {
-          id: 2,
-          title: 'React is awsome',
-          completed: false
-        },
-        {
-          id: 3,
-          title: 'I am learning React',
-          completed: false
-        }
-      ]
+      todos: []
+    }
+
+    componentDidMount(){
+      axios.get('https://jsonplaceholder.typicode.com/todos?_limit=3')
+      .then(res => this.setState({todos: res.data}))
     }
 
     //mark completed
@@ -39,12 +28,18 @@ class App extends Component {
 
     //Delete todo
    deleteTodo = (id) => {
-    this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)]});
+     axios.get(`https://jsonplaceholder.typicode.com/todos/${id}`)
+     .then(res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)]}))
+    
    }
 
    //addTodo
    addTodo = (title) =>{
-    console.log(title)
+    axios.post('https://jsonplaceholder.typicode.com/todos',{
+    title: title,
+    completed: false
+   })
+   .then(res =>  this.setState({todos: [...this.state.todos, res.data]}));
    }
     render(){
     return (
