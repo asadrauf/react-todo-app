@@ -1,4 +1,4 @@
-### react-todoList
+### react-todoList deployed link: https://asadrauf.github.io/react-todo-app/
 ![Maintained](https://img.shields.io/badge/todoList-yellowgreen) ![Maintained](https://img.shields.io/badge/UNC-bootCamp-blue)
 Basic Todos application build using react.js allow user to add todos to the list and delete from the list. Also user can mark complete the todos. This application is using get axios call to jsonPlaceholder api to to get fake todos from their api. Also when you add your todos it send data to jsonPlaceholder api and send us back the respone. Won't save any data to their api. 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
